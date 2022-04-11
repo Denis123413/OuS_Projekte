@@ -53,5 +53,10 @@ def aufgabe_1_3():
               "und {} Leisten der Länge 2m.".format(l, x[1.5, l].x, x[2, l].x))
 
 
+def aufgabe_1_4():
+
+    pass
+
+
 if __name__ == "__main__":
     aufgabe_1_1()
