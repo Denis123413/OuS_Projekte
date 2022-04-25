@@ -83,9 +83,6 @@ def start_simulation():
 
         for i in Fahrzeug.liste:
             pos = i.drive()
-
-            aaa = street
-            #aa = np.where(True, aaa)
             ax.add_patch(Rectangle((pos, 0), 10, 5, facecolor=i.color))
 
         canvas.draw()
@@ -98,38 +95,38 @@ def start_simulation():
         label1.image = test
         label1.place(x=10, y=30)
 
-        time.sleep(0.1)
+        time.sleep(0.01)
         window.update()
 
 
     s = 8
 
 if __name__ == '__main__':
-    f1 = Fahrzeug(9, 600)
-    f2 = Fahrzeug(8, 590)
-    f3 = Fahrzeug(17, 573)
-    f4 = Fahrzeug(19, 400)
-    f5 = Fahrzeug(11, 380)
-    f6 = Fahrzeug(13, 323)
-    f7 = Fahrzeug(16, 250)
-    f8 = Fahrzeug(20, 190)
-    f9 = Fahrzeug(21, 180)
-    f10 = Fahrzeug(9, 672)
-    f11 = Fahrzeug(8, 720)
+    f1 = Fahrzeug(9, 300)
+    f2 = Fahrzeug(8, 390)
+    f3 = Fahrzeug(17, 420)
+    f4 = Fahrzeug(19, 430)
+    f5 = Fahrzeug(11, 480)
+    f6 = Fahrzeug(13, 523)
+    f7 = Fahrzeug(16, 520)
+    f8 = Fahrzeug(20, 590)
+    f9 = Fahrzeug(21, 593)
+    f10 = Fahrzeug(9, 622)
+    f11 = Fahrzeug(8, 629)
     f12 = Fahrzeug(17, 773)
     f13 = Fahrzeug(19, 800)
-    f14 = Fahrzeug(11, 980)
-    f15 = Fahrzeug(13, 1023)
-    f16 = Fahrzeug(16, 1150)
-    f17 = Fahrzeug(20, 1290)
-    f18 = Fahrzeug(21, 1380)
+    f14 = Fahrzeug(11, 830)
+    f15 = Fahrzeug(13, 853)
+    f16 = Fahrzeug(16, 880)
+    f17 = Fahrzeug(13, 910)
+    f18 = Fahrzeug(11, 940)
 
 
     window = tk.Tk()
-    window.title('Test')
+    window.title('Nagel Schreckenberg model simulation')
     window.geometry("1080x400")
 
-    simulate = tk.Button(window, text='start simulation', font='Calibri 12', command=start_simulation)
-    simulate.place(x=50, y=310)
+    simulate = tk.Button(window, text='start simulation', font=('Calibri 12', 30), command=start_simulation)
+    simulate.place(x=380, y=180)
 
     window.mainloop()

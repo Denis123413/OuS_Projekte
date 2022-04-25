@@ -54,6 +54,12 @@ def aufgabe_1_3():
 
 
 def aufgabe_1_4():
+    m = grb.Model
+
+    standorte = range(5)
+    werkzeuge = range(5)
+
+    d = [[0, 2, 4, 3, 5]]
 
     pass
 
